@@ -1,14 +1,15 @@
-# 🖼️ CNN Model for CIFAR-10 Classification
+# 🧠 CIFAR-10 Image Classifier with CNN
 
-This repository contains a Convolutional Neural Network (CNN) implementation for classifying images in the CIFAR-10 dataset using TensorFlow and Keras.
+This repository contains a Convolutional Neural Network (CNN) implementation and deployment for classifying images in the CIFAR-10 dataset using TensorFlow, Keras, and Gradio, hosted on Hugging Face Spaces.
 
 ## 📋 Overview
 
-The CIFAR-10 dataset consists of 60,000 32x32 color images in 10 classes, with 6,000 images per class. The model uses a deep CNN architecture with data augmentation, regularization techniques, and proper training strategies to achieve high accuracy.
+The CIFAR-10 dataset includes 60,000 32x32 color images across 10 categories. This project utilizes a deep CNN architecture with data augmentation and regularization to achieve high accuracy. A user-friendly interface is deployed using Gradio for real-time image classification.
 
 ## 🗂️ Dataset
 
-CIFAR-10 includes the following classes:
+The CIFAR-10 dataset includes the following classes:
+
 - ✈️ airplane
 - 🚗 automobile
 - 🐦 bird
@@ -22,33 +23,35 @@ CIFAR-10 includes the following classes:
 
 ## 📁 Repository Structure
 
-```
 CIFAR-10_Classification/
-├── models/                  # Saved model files
-├── visualizations/          # Plots and visual outputs
-├── .gitignore               # Git ignore file
-├── CIFAR-10_Classification.ipynb  # Main Jupyter notebook with implementation
-└── README.md                # This file
-```
+├── app/                    # Gradio web app for model inference
+├── models/                 # Trained and saved model files
+├── notebooks/              # Jupyter notebook for training and experimentation
+├── visualizations/         # Plots and visual outputs from training
+├── .gitignore              # Specifies intentionally untracked files to ignore
+├── README.md               # Project documentation
+
 
 ## 🏗️ Model Architecture
 
-The implemented CNN has the following structure:
-- Multiple convolutional layers with batch normalization
-- MaxPooling layers for dimensionality reduction
+The implemented CNN includes:
+
+- Convolutional layers with Batch Normalization
+- MaxPooling layers for downsampling
 - Dropout layers to prevent overfitting
-- Global Average Pooling to reduce parameters
+- Global Average Pooling to reduce dimensionality
 - Dense layers with L2 regularization
 
 ## ✨ Features
 
 - **Data Preprocessing**: Normalization and train/validation split
-- **Data Augmentation**: Rotation, width/height shifts, and horizontal flips to improve model generalization
-- **Regularization Techniques**: Dropout, Batch Normalization, and L2 regularization
-- **Advanced Training Strategies**: 
-  - Learning rate reduction on plateau
-  - Early stopping
-  - Model checkpointing
+- **Data Augmentation**: Rotation, shift, and flip transformations
+- **Regularization**: Dropout, BatchNorm, L2 regularization
+- **Callbacks**:
+  - ReduceLROnPlateau
+  - EarlyStopping
+  - ModelCheckpoint
+- **Interactive Deployment**: Real-time predictions with Gradio
 
 ## 📦 Requirements
 
@@ -58,61 +61,61 @@ The implemented CNN has the following structure:
 - Matplotlib
 - Seaborn
 - scikit-learn
+- Gradio
 
 ## 🚀 Usage
 
-### Installation
+### Install dependencies
 
 ```bash
-pip install tensorflow numpy matplotlib seaborn scikit-learn
+pip install -r requirements.txt
 ```
 
-### Running the Notebook
+### Train the model (optional)
 
-1. Clone this repository
-   ```bash
-   git clone https://github.com/SHAH-MEER/CIFAR-10_Classification.git
-   cd CIFAR-10_Classification
-   ```
+```bash
+jupyter notebook CIFAR-10_Classification.ipynb
+```
 
-2. Open the Jupyter notebook
-   ```bash
-   jupyter notebook CIFAR-10_Classification.ipynb
-   ```
+### Run the Gradio app
 
-3. Run the cells in the notebook to:
-   - Load and preprocess the CIFAR-10 dataset
-   - Set up data augmentation
-   - Build and compile the model
-   - Train with callbacks for optimization
-   - Evaluate performance
+```bash
+python app.py
+```
+
+### Live Demo
+
+Check out the app on Hugging Face Spaces: [🔗 View Demo](https://huggingface.co/spaces/your-space-url)
 
 ## 📊 Results
 
-The model achieves competitive accuracy on the CIFAR-10 test set with:
-- Effective learning through the implemented CNN architecture
-- Reduced overfitting via regularization techniques
-- Improved generalization through data augmentation
+- Competitive accuracy on the CIFAR-10 test set
+- Enhanced generalization via data augmentation
+- Reduced overfitting through regularization
 
-Visualizations of the training process and model performance can be found in the `visualizations/` directory.
+Visual outputs and performance plots are available in the `visualizations/` folder.
 
 ## ⚙️ Customization
 
-You can adjust various hyperparameters in the notebook:
-- `BATCH_SIZE`: Number of samples per gradient update (default: 128)
-- `EPOCHS`: Maximum number of training epochs (default: 50)
-- Learning rate and optimizer settings
-- Network architecture (layers, filters, etc.)
+You can modify hyperparameters in the notebook or script:
+
+- `BATCH_SIZE`
+- `EPOCHS`
+- Learning rate & optimizer settings
+- Model architecture
 
 ## 📭 Contact
 
-- Email: shahmeershahzad67@gmail.com
+- Email: [shahmeershahzad67@gmail.com](mailto\:shahmeershahzad67@gmail.com)
 - GitHub: [SHAH-MEER](https://github.com/SHAH-MEER)
 
 ## 📜 License
 
-[MIT License](LICENSE)
+This project is licensed under the [MIT License](LICENSE).
 
 ## 🙏 Acknowledgements
 
-- The CIFAR-10 dataset was collected by Alex Krizhevsky, Vinod Nair, and Geoffrey Hinton
+- CIFAR-10 dataset: Alex Krizhevsky, Vinod Nair, Geoffrey Hinton
+- TensorFlow & Keras teams
+- Gradio & Hugging Face for deployment tools
+
