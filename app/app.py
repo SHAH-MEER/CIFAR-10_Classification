@@ -32,7 +32,8 @@ demo = gr.Interface(
     inputs=gr.Image(type="pil", label="Upload Image"),
     outputs=gr.Label(label="Predicted Class Probabilities"),
     examples=[
-        "airplane.jpeg"
+        "airplane.jpeg",
+        "cat.jpeg"
     ],
     title="🚀 CIFAR-10 Image Classifier",
     description="Upload an image to classify it into one of 10 CIFAR-10 categories."
