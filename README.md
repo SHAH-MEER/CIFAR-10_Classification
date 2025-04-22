@@ -22,7 +22,7 @@ The CIFAR-10 dataset includes the following classes:
 - 🚚 truck
 
 ## 📁 Repository Structure
-
+```
 CIFAR-10_Classification/
 ├── app/                    # Gradio web app for model inference
 ├── models/                 # Trained and saved model files
@@ -30,7 +30,7 @@ CIFAR-10_Classification/
 ├── visualizations/         # Plots and visual outputs from training
 ├── .gitignore              # Specifies intentionally untracked files to ignore
 ├── README.md               # Project documentation
-
+```
 
 ## 🏗️ Model Architecture
 
