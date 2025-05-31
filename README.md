@@ -85,7 +85,7 @@ python app.py
 
 ### Live Demo
 
-Check out the app on Hugging Face Spaces: [🔗 View Demo]((https://huggingface.co/spaces/SHAH-MEER/cifar10-classifier))
+Check out the app on Hugging Face Spaces: ((https://huggingface.co/spaces/SHAH-MEER/cifar10-classifier))
 
 ## 📊 Results
 
