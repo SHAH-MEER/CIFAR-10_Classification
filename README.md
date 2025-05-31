@@ -85,7 +85,7 @@ python app.py
 
 ### Live Demo
 
-Check out the app on Hugging Face Spaces: [🔗 View Demo](https://huggingface.co/spaces/your-space-url)
+Check out the app on Hugging Face Spaces: [🔗 View Demo]((https://huggingface.co/spaces/SHAH-MEER/cifar10-classifier))
 
 ## 📊 Results
 
@@ -95,27 +95,7 @@ Check out the app on Hugging Face Spaces: [🔗 View Demo](https://huggingface.c
 
 Visual outputs and performance plots are available in the `visualizations/` folder.
 
-## ⚙️ Customization
-
-You can modify hyperparameters in the notebook or script:
-
-- `BATCH_SIZE`
-- `EPOCHS`
-- Learning rate & optimizer settings
-- Model architecture
-
-## 📭 Contact
 
 - Email: [shahmeershahzad67@gmail.com](mailto\:shahmeershahzad67@gmail.com)
 - GitHub: [SHAH-MEER](https://github.com/SHAH-MEER)
-
-## 📜 License
-
-This project is licensed under the [MIT License](LICENSE).
-
-## 🙏 Acknowledgements
-
-- CIFAR-10 dataset: Alex Krizhevsky, Vinod Nair, Geoffrey Hinton
-- TensorFlow & Keras teams
-- Gradio & Hugging Face for deployment tools
 
